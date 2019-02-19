@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>HTML Inputs ประเภทต่างๆ</h2>
+    </header>
+    <nav>
+        <ul class="list-item">
+            <li>
+                <a href="#input">Inputs</a>
+            </li>
+            <li>
+                <a href="#select">Selections</a>
+            </li>
+            <li>
+                <a href="#others">Others</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="input">
+            <article>
+                <h3>Tag &lt;input&gt;</h3>
+                <div class="column">
+                    <label>type="textbox"</label>
+                    <input type="textbox">
+                </div>
+                <div class="column">
+                    <label>type="date"</label>
+                    <input type="date">
+                </div>
+                <div class="column">
+                    <label>type="time"</label>
+                    <input type="time">
+                </div>
+                <div class="column">
+                    <label>type="week"</label>
+                    <input type="week">
+                </div>
+                <div class="column">
+                    <label>type="month"</label>
+                    <input type="month">
+                </div>
+                <div class="column">
+                    <label>type="color"</label>
+                    <input type="color">
+                </div>
+                <div class="column">
+                    <label>type="search"</label>
+                    <input type="search">
+                </div>
+                <div class="column">
+                    <label>type="email"</label>
+                    <input type="email">
+                </div>
+                <div class="column">
+                    <label>type="url"</label>
+                    <input type="url">
+                </div>
+                <div class="column">
+                    <label>type="file"</label>
+                    <input type="file"> (For prepare uploading file)
+                </div>
+                <div class="column">
+                    <label>type="image"</label>
+                    <input type="image"
+                        src="http://woodphoriaky.com/wp-content/uploads/2018/05/design-a-free-logo-free-logo-maker-abstract-bridge-logo-design-download.png"
+                        style="border:solid;width:10%;height:10%;">
+                    (This image is act like button)
+                </div>
+                <div class="column">
+                    <label>type="number"</label>
+                    <input type="number">
+                </div>
+                <div class="column">
+                    <label>type="password"</label>
+                    <input type="password">
+                </div>
+                <div class="column">
+                    <label>type="range"</label>
+                    <input type="range" min="1" max="99">
+                    (Range start from 1 to 99)
+                </div>
+                <div class="column">
+                    <label>type="radio"</label>
+                    <input type="radio" name="sex" value="Male"> Male
+                    <input type="radio" name="sex" value="Female"> Female
+                    <input type="radio" name="sex" value="Trans">
+                    Transgenders (You can select only one)
+                </div>
+                <div class="column">
+                    <label>type="checkbox"</label>
+                    <input type="checkbox" name="food" value="Japanese">
+                    Japanese Food
+                    <input type="checkbox" name="food" value="American">
+                    American Food
+                    <input type="checkbox" name="food" value="Chinese">
+                    Chinese Food (You can select more than one)
+                </div>
+                <div class="column">
+                    <label>type="hidden"</label>
+                    <input type="hidden" value="I love you! but I
+                            can't tell">
+                </div>
+                <div class="column">
+                    <label>type="button"</label>
+                    <input type="button" value="OK">
+                    -- for call some javascript function
+                </div>
+                <div class="column">
+                    <label>type="submit"</label>
+                    <input type="submit" value="submit">
+                    - for sending data to server
+                </div>
+            </article>
+            <aside>
+                <b>Note</b>
+                <br>
+                **You should not remember to assign unique id of each
+                every HTML
+                Control**
+                <br>
+                Checkbox and Radio must name a name for grouping set of
+                values in same meaning.
+                <br>
+                Url,Email,Search can use in few browser.
+            </aside>
+        </section>
+        <section id="select">
+            <article>
+                <h3>Tag &lt;select&gt; (Dropdown list)</h3>
+                <div class="column">
+                    <label>Single Value</label>
+                    <select>
+                        <option value="S">Single</option>
+                        <option value="M">Marriage</option>
+                        <option value="D">Divorce</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label>Grouping Value</label>
+                    <select>
+                        <optgroup label="Pets">
+                            <option value="Dog">Dog</option>
+                            <option value="Cat" selected>Cat</option>
+                            <option value="Bird">Bird</option>
+                        </optgroup>
+                        <optgroup label="Wilds">
+                            <option value="Tiger">Tiger</option>
+                            <option value="Elephants">Elephants</option>
+                            <option value="Chochodile">Chochodiles</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="column">
+                    <label>Multiple Value with grouping</label>
+                    <select multiple style="height: 150px">
+                        <optgroup label="Pets">
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Bird">Bird</option>
+                        </optgroup>
+                        <optgroup label="Wilds">
+                            <option value="Tiger">Tiger</option>
+                            <option value="Elephants">Elephants</option>
+                            <option value="Chochodile">Chochodiles</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </article>
+            <aside>
+                <b>Note</b>
+                <br>
+                you can add "selected" after option tag for default this
+                option to user
+            </aside>
+        </section>
+        <section id="others">
+            <article style="flex:40%">
+                <h3>Tag &lt;textarea&gt;</h3>
+                <p>
+                    you can write text with multiple line here :<br />
+                    <textarea style="width:80%;height:200px"></textarea>
+                </p>
+            </article>
+            <article style="flex:40%">
+                <div>
+                    <h3>Tag &lt;label&gt;</h3>
+                    <p>
+                        This is label with fixed width :<br />
+                        <label style="display:
+                                        block;width:200px;text-align:
+                                        right;border:solid;">Hello world!</label>
+                    </p>
+                </div>
+                <div>
+                    <h3>Tag &lt;button&gt; </h3>
+                    <p>
+                        This is advance styling button<br />
+                        <button style="width:200px;color:blue"><i><b>There!</b></i></button>
+                    </p>
+                </div>
+                <div>
+                    <h3>Tag &lt;progress&gt;</h3>
+                    <p>
+                        Progress bar
+                        <progress max="100" value="50">50%</progress>
+                    </p>
+                </div>
+                <div>
+                    <h3>Tag &lt;meter&gt;</h3>
+                    <p>
+                        Meter bar
+                        <meter max="100" value="50">50%</meter>
+                    </p>
+                </div>
+            </article>
+            <aside>
+                <b>Note:</b>
+                <p>
+                    Text Area can modified length on run-time by clicking right-bottom edge and drag it for adjust size
+                </p>
+            </aside>
+        </section>
+        <section id="etc">
+            <article style="flex-direction: column">
+                <article>
+                    <h3>Tag &lt;details&gt;</h3>
+                    <p>
+                        Display show/hide information :
+                    </p>
+                    <details>
+                        <summary>About me</summary>
+                        <p> Phuthipong Kongpoung </p>
+                        <p> From Thailand </p>
+                    </details>
+                </article>
+                <article>
+                    <h3>Tag &lt;datalist&gt;</h3>
+                    <p>
+                        Used for created List of values :
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </p>
+                </article>
+            </article>
+            <aside>
+                <b>Note:</b>
+                <p>
+                    Data list is not supported in Safary / Edge / IE
+                </p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        This web page is using semantic HTML
+        without &lt;div&gt;
+    </footer>
+</body>
+
+</html>
