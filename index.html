@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,8 +28,8 @@
             <article>
                 <h3>Tag &lt;input&gt;</h3>
                 <div class="column">
-                    <label>type="textbox"</label>
-                    <input type="textbox">
+                    <label>type="text"</label>
+                    <input type="text">
                 </div>
                 <div class="column">
                     <label>type="date"</label>
@@ -64,15 +64,14 @@
                     <input type="url">
                 </div>
                 <div class="column">
-                    <label>type="file"</label>
-                    <input type="file"> (For prepare uploading file)
+                    <label>type="file"</label>                    
+                    <input type="file">
                 </div>
                 <div class="column">
                     <label>type="image"</label>
                     <input type="image"
-                        src="http://woodphoriaky.com/wp-content/uploads/2018/05/design-a-free-logo-free-logo-maker-abstract-bridge-logo-design-download.png"
-                        style="border:solid;width:10%;height:10%;">
-                    (This image is act like button)
+                           src="http://woodphoriaky.com/wp-content/uploads/2018/05/design-a-free-logo-free-logo-maker-abstract-bridge-logo-design-download.png"
+                           style="border:solid;width:10%;height:10%;">
                 </div>
                 <div class="column">
                     <label>type="number"</label>
@@ -85,24 +84,25 @@
                 <div class="column">
                     <label>type="range"</label>
                     <input type="range" min="1" max="99">
-                    (Range start from 1 to 99)
                 </div>
                 <div class="column">
                     <label>type="radio"</label>
-                    <input type="radio" name="sex" value="Male"> Male
-                    <input type="radio" name="sex" value="Female"> Female
-                    <input type="radio" name="sex" value="Trans">
-                    Transgenders (You can select only one)
+                    <div class="row">
+                        <label><input type="radio" name="sex" id="sex_male" value="Male">Male</label>
+                        <label><input type="radio" name="sex" id="sex_female" value="Female">Female</label>
+                        <label><input type="radio" name="sex" id="sex_trans" value="Trans">Transgenders</label>
+                    </div>
                 </div>
+                (You can select only one)
                 <div class="column">
-                    <label>type="checkbox"</label>
-                    <input type="checkbox" name="food" value="Japanese">
-                    Japanese Food
-                    <input type="checkbox" name="food" value="American">
-                    American Food
-                    <input type="checkbox" name="food" value="Chinese">
-                    Chinese Food (You can select more than one)
+                    <label>type="checkbox"</label>                    
+                    <div class="row">
+                        <label><input type="checkbox" name="food" id="food_jp" value="Japanese">Japanese Food</label>
+                        <label><input type="checkbox" name="food" id="food_us" value="American">American Food</label>
+                        <label><input type="checkbox" name="food" id="food_cn" value="Chinese">Chinese Food</label>
+                    </div>
                 </div>
+                (You can select more than one)
                 <div class="column">
                     <label>type="hidden"</label>
                     <input type="hidden" value="I love you! but I
@@ -111,13 +111,13 @@
                 <div class="column">
                     <label>type="button"</label>
                     <input type="button" value="OK">
-                    -- for call some javascript function
                 </div>
+                -- for call some javascript function
                 <div class="column">
                     <label>type="submit"</label>
                     <input type="submit" value="submit">
-                    - for sending data to server
                 </div>
+                -- for sending data to server
             </article>
             <aside>
                 <b>Note</b>
@@ -182,14 +182,14 @@
             </aside>
         </section>
         <section id="others">
-            <article style="flex:40%">
+            <article>
                 <h3>Tag &lt;textarea&gt;</h3>
                 <p>
                     you can write text with multiple line here :<br />
                     <textarea style="width:80%;height:200px"></textarea>
                 </p>
             </article>
-            <article style="flex:40%">
+            <article>
                 <div>
                     <h3>Tag &lt;label&gt;</h3>
                     <p>
@@ -229,7 +229,7 @@
             </aside>
         </section>
         <section id="etc">
-            <article style="flex-direction: column">
+            <article class="row">
                 <article>
                     <h3>Tag &lt;details&gt;</h3>
                     <p>

@@ -1,127 +1,138 @@
 * {
     /*ึ---CSS Reset---*/
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     /*--Style for Body--*/
-    background:lightcyan;
-    font-family: Arial, Helvetica, sans-serif; 
+    background: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-footer,header {
+footer, header {
     /*--Style For header--*/
-    color:yellow;   
-    padding-top:1em;    
+    display: block;
+    color: yellow;
+    padding-top: 1em;
     padding-left: 1em;
-    display:inline-flexbox;
+    padding-bottom: 1em;
     height: 3em;
-    background-color:blueviolet;
-    padding-bottom:1em;
+    background-color: blueviolet;
 }
 
 main {
     /*--Style For main--*/
-    display:flex;  /*This is flexbox*/
+    display: flex; /*This is flexbox*/
     flex-direction: column; /*For top-down */
 }
 
 section {
     /*--Style For section--*/
-    display:flex;  /*This is flexbox*/
-
+    display: flex; /*This is flexbox*/
     flex-direction: row; /*For top-down */
     font-weight: bold;
-
-    margin-top:1em;
-    margin-left:1em;
-    margin-right:1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-bottom: 1em;
-
-    border:solid slateblue;
-    background-color:lightgreen;
+    border: solid slateblue;
     border-width: thin;
+    background-color: lightgreen;
 }
 
 article {
     /*--Style for article--*/
-    color:black;
-    padding-left :20px;
-    padding-top :20px;
+    flex: 80%;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
     margin-bottom: 10px;
-    flex:80%;
 }
 
 aside {
     /*--Style For aside--*/
-    flex:20%;
-    padding-left :20px;
-    padding-top :20px;
-    margin-top:10px;
+    flex: 20%;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    margin-left:10px;
-    background-color:wheat;   
+    margin-left: 10px;
+    background-color: wheat;
 }
 
 h3 {
-    color:red;
+    color: red;
 }
 
 .column {
-    display:flex;
-    margin-top:5px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
 }
 
 .column label {
-    display:block;
-    width:150px;
-    text-align:left;
+    display: block;
+    width: 150px;
+    text-align: left;
+    color: darkviolet;
+}
+
+.row label {
+    color: darkblue;
+}
+
+#others article {
+    flex: 40%;
 }
 
 nav {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 1em;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    list-style-type: none;
-    text-align: center;
-    background-color: black;
-    width: 100%;
-}
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        background-color: black;
+        width: 100%;
+    }
 
-nav li {
-    width: 15%;
-}
+    nav li {
+        width: 15%;
+    }
 
-nav a {
-    display: block;
-    text-decoration: none;
-    height: 30px;
-    padding-top: 1em;
-    color: white;
-}
+    nav a {
+        padding-top: 10px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        height: 30px;
+    }
 
-nav a:hover {
-    color: black;
-    background-color: white;
-}
+        nav a:hover {
+            color: black;
+            background-color: white;
+        }
 
 @media (max-width:600px) {
-    .nav {
-        display: none;
+    .column {
+        display: inline;
     }
 
     nav ul {
-        margin-top: 10px;
-        display: flex;
         flex-direction: column;
-        align-items: start;
+    }
+
+    section {
+        flex-direction: column;
     }
 
     nav li {
